@@ -2,7 +2,10 @@ import express from 'express'
 import cors from 'cors'
 import 'dotenv/config.js'
 import { pool } from './db.js'
+import 'dotenv/config'
 
+const databaseUrl = process.env.DATABASE_URL
+const port = process.env.PORT
 const app = express()
 
 // cors
