@@ -16,7 +16,7 @@ app.use(cors({
 }))
 app.use(express.json())
 
-// GET route - Fetch all messages
+// GET route all messages
 app.get('/api/messages', async (req, res) => {
   try {
     console.log('Attempting to fetch messages')
